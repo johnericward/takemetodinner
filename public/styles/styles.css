@@ -89,6 +89,12 @@ body {
   font-weight: bold;
 }
 .peopleAreaCardBody {
- 
+  background-color: rgb(56, 56, 56);
   color: white;
+  padding: 1%;
+}
+.peopleAreaLI {
+  background-color: rgb(56, 56, 56);
+  color:blue;
+  padding: 1%;
 }

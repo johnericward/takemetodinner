@@ -1,24 +1,25 @@
- {{!-- 
+{{!-- 
    profile-block.handlebars                         
    card element with each individual's profile info. 
  --}}
 <div class="col-12 col-md-6 col-lg-12">
-<div class="card mb-3" {{!-- style="width: 18rem;" --}} >
-  <div class="card-header peopleAreaCard">
-    <h5 class="card-title peopleAreaCardTitle">{{name}}</h5>
+  <div class="card mb-3" {{!-- style="width: 18rem;" --}}>
+    <div class="card-header peopleAreaCard">
+      <h5 class="card-title peopleAreaCardTitle">{{name}}</h5>
+
+      <div class="card-body peopleAreaCardBody">
+        {{!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> --}}
+        <p class="card-text">{{bio}}</p>
+        <p class="card-text">{{location}}</p>
+        <ul class="list-group list-group-flush peopleAreaLI">
+          <li class="list-group-item peopleAreaLI">{{restaurant1}}</li>
+          <li class="list-group-item peopleAreaLI">{{restaurant2}}</li>
+          <li class="list-group-item peopleAreaLI">{{restaurant3}}</li>
+        </ul>
+        <p class="card-text">{{email}}</p>
+        <a href="#" class="card-link">Leave Message</a>
+        {{!-- <a href="#" class="card-link">Another link</a> --}}
+      </div>
+    </div>
   </div>
-  <div class="card-body peopleAreaCardBody">
-    {{!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> --}}
-    <p class="card-text">{{bio}}</p>
-    <p class="card-text">{{location}}</p>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{restaurant1}}</li>
-      <li class="list-group-item">{{restaurant2}}</li>
-      <li class="list-group-item">{{restaurant3}}</li>
-    </ul>
-    <p class="card-text">{{emailContact}}</p>
-    <a href="#" class="card-link">Leave Message</a>
-    {{!-- <a href="#" class="card-link">Another link</a> --}}
-  </div>
-</div>
 </div>
