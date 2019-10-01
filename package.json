@@ -16,6 +16,7 @@
     "express-handlebars": "^3.1.0",
     "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
+    "nodemon": "^1.19.3",
     "sequelize": "^5.19.0"
   },
   "devDependencies": {
@@ -33,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/savannalever/furry-adventure.git"
+    "url": "https://github.com/johnericward/takemetodinner.git"
   },
   "keywords": [],
   "author": "",
   "bugs": {
-    "url": "https://github.com/savannalever/furry-adventure/issues"
+    "url": "https://github.com/johnericward/takemetodinner/issues"
   },
-  "homepage": "https://github.com/savannalever/furry-adventure#readme"
+  "homepage": "https://github.com/johnericward/takemetodinner#readme"
 }
