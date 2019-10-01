@@ -20,9 +20,9 @@
   <div class="col-sm-7">
 
     {{!-- <div class="card peopleAreaCard"> --}}
-    <div class="card-header peopleAreaHeader">
+    {{!-- <div class="card-header peopleAreaHeader">
       Take These People Out To Dinner
-    </div>
+    </div> --}}
     {{!-- <div class="card-body peopleAreaCardBody" id="well-section"> --}}
     <div>
       <!-- Content will go in here -->
@@ -41,7 +41,7 @@
         Filter Settings
       </div>
       <div class="card-body peopleAreaCardBody" id="well-section">
-
+        <br>
         <!--filter pieces-->
         <div class="dropdown">
           <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Location
@@ -81,22 +81,21 @@
             <li><a href="#">Zaza (hardcoded)</a></li>
           </ul>
         </div>
-
-        <script>
-          var randoTextArray = ["Please don't be creppy", "Why eat alone when you can eat with a stranger", "Don't get murdered"];
-
-          randoText = Math.floor(Math.random() * randoTextArray.length);
-          theText = randoTextArray[randoText];
-
-          console.log(theText);
-
-          // //the jquery
-          $(".subtitleDiv").text(theText);
-
-        </script>
-
-
+        <br>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  var randoTextArray = ["Please don't be creepy.", "Why eat alone when you can eat with a stranger?", "Don't get murdered...", "Meet someone new!", "Tell a friend where you're going maybe.", "Exactly what your mom told you not to do."];
+
+  randoText = Math.floor(Math.random() * randoTextArray.length);
+  theText = randoTextArray[randoText];
+
+  console.log(theText);
+
+  // //the jquery
+  $(".subtitleDiv").text(theText);
+
+</script>
