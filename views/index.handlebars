@@ -4,7 +4,7 @@
   <div class="col-sm-10">
     <div class="jumbotron sticky-top">
       <h1 class="titleDiv">Take Me to Dinner</h1>
-      <h3 class="subtitleDiv">Meet Someone New!</h3>
+      <h3 class="subtitleDiv"></h3>
 
       <hr>
 
@@ -82,7 +82,18 @@
           </ul>
         </div>
 
+        <script>
+          var randoTextArray = ["Please don't be creppy", "Why eat alone when you can eat with a stranger", "Don't get murdered"];
 
+          randoText = Math.floor(Math.random() * randoTextArray.length);
+          theText = randoTextArray[randoText];
+
+          console.log(theText);
+
+          // //the jquery
+          $(".subtitleDiv").text(theText);
+
+        </script>
 
 
       </div>
