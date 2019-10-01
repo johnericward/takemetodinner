@@ -1,32 +1,92 @@
-<div class="container">
-   <div class="jumbotron">
-      <h1>Take Me To Dinner!</h1>
-      <h3>Meet Someone New!</h3>
-      <hr>
-      <a href="/add" class="btn btn-danger btn-lg">
-      <span class="fa fa-plus"></span> Add Your Profile</a>
-   </div>
-   <div class="row">
-      <div class="col-lg-12">
-         <div class="card">
-            <div class="card-header">
-               Take These People Out To Dinner
-            </div>
-            <div class="card-body" id="well-section">
-               <!-- Content will go in here -->
-               <div class="row">
-                 {{#each eaterData}}
-                   {{> profile/profile-block}}
-                 {{/each}}
-                 </div>
-               </div>
-            </div>
-         </div>
+ <!-- <div class="container"> -->
+  <div class="row sticky-top">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="jumbotron sticky-top">
+        <h1 class="titleDiv">Take Me to Dinner</h1>
+        <h3 class="subtitleDiv">Meet Someone New!</h3>
+
+        <hr>
+
+
+        <a href="/add" class="btn btn-danger btn-lg">
+          <span class="fa fa-plus"></span> Add Your Profile</a>
       </div>
-   </div>
-</div>
-<!-- jQuery JS -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- custom front-end logic -->
-<script src="/js/index.js"></script>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-7">
+
+      <div class="card peopleAreaCard">
+        <div class="card-header peopleAreaCardTitle">
+          Take These People Out To Dinner
+        </div>
+        <div class="card-body peopleAreaCardBody" id="well-section">
+
+          <!-- Content will go in here -->
+          {{#each eaterData}}
+          {{> profile/profile-block}}
+        {{/each}}
+         
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+
+      <div class="card peopleAreaCard">
+        <div class="card-header peopleAreaCardTitle">
+          Filter Settings
+        </div>
+        <div class="card-body peopleAreaCardBody" id="well-section">
+
+          <!--filter pieces-->
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Location
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <div class="locationDropdowns"></div>
+              <li><a href="#">Orlando, FL (hardcoded)</a></li>
+            </ul>
+          </div>
+          <br>
+          <br>
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Restaurant 1
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <div class="r1Dropdowns restaurantDropdowns"></div>
+                <li><a href="#">Zaza (hardcoded)</a></li>
+              </ul>
+            </div>
+            <br>
+          <br>
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Restaurant 2
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <div class="r2Dropdowns restaurantDropdowns"></div>
+                <li><a href="#">Zaza (hardcoded)</a></li>
+              </ul>
+            </div>
+            <br>
+          <br>
+          <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Restaurant 3
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <div class="r3Dropdowns restaurantDropdowns"></div>
+                <li><a href="#">Zaza (hardcoded)</a></li>
+              </ul>
+            </div>
+            
+
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
 
