@@ -1,0 +1,41 @@
+// .NAME
+//   mvp.txt
+// .WHAT
+//   Minimum Viable Product documentation for the "Take Me To Dinner" Web Application ( UCF Coding Bootcamp Project #2)
+// .DATE
+//   25-SEP-2019
+// .AUTHOR(S)
+//   Savanna Lever, Laurentino James, John Eric Ward, Jose Robles
+// .COPYRIGHT
+//  (c) 2019  Savanna Lever, Laurentino James, John Eric Ward, Jose Robles
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                               Take Me To Dinner
+The purpose of the "Take Me To Dinner" application is to  bring people together for dinner at a restaurant.  The inten-
+ded audience for the application are persons that want to go to dinner to one of their favorite restaurants but have
+no one to share dinner with: 
+-- Someone with nothing to do and wants to go to dinner.
+-- Single persons, lonely or bored persons. 
+-- Someone from out of town that wants to visit a local restaurant. 
+
+At a minimum, the application provides  this functionality:
+1) Allows a person to create a "request for dinner" with the following attributes:
+ - Person name
+ - Person location (City).
+ - Short Bio
+ - List of favorite restaurants.
+ - Picture
+
+2) Lists all the active dinner requests that have been created by users. 
+3) Allow a user to respond to a dinner request by providing their contact details in a dinner request. 
+4) Notify the dinner request creator via e-mail when someone responds to a request. 
+
+
+Future functionality (Project "icebox" cards) : 
+-- Maps (Geolocation) for Persons and Restaurants 
+-- Conversation-style communication (message send/respond).
+-- Criminal Records Search/ Backgrond Search API integration.
+-- Person/Dinner Partner rating.
+-- Restaurant rating. 
+-- User Accounts
+-- Provide Calendar where user can specify when they want to be taken out to dinner. 
+-- "Put Your Ad Here" (Monetize)
