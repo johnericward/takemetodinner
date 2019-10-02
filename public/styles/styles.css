@@ -101,3 +101,10 @@ body {
   color:rgb(206, 13, 206);;
   padding: 1%;
 }
+
+/* index.hbs drop-down menus start */
+.dropdown-menu {
+  width: 300px !important;
+  height: 150px !important;
+}
+/* index.hbs drop-down menus end */
