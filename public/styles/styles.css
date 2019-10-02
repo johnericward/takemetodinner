@@ -10,6 +10,7 @@ body {
 .titleDiv {
   font-family:  'Monoton', arial, sans-serif;
   font-size: 700%;
+  letter-spacing: 5px;
   /* color: rgb(13, 219, 255); */
 
   text-decoration: none;
@@ -72,6 +73,26 @@ body {
   color: rgb(131, 4, 131);
 }
 
+.glowDiv {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow:
+    0 0 60px 30px #fff,
+    0 0 100px 60px #f0f,
+    0 0 140px 90px #0ff;
+
+    /* width: 150px;
+    height: 150px;
+    background-color: #fff;
+
+    box-shadow: 120px 80px 40px 20px #0ff; */
+}
+
 .peopleAreaHeader {
   color: rgb(90, 90, 90);
   font-family: arial-bold, sans-serif;
@@ -80,7 +101,10 @@ body {
 
 .peopleAreaCard {
   background-color: rgb(27, 27, 27);
-  border-color: rgb(20, 20, 20);
+  border-color: rgb(20, 20, 20) !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  
 }
 
 .peopleAreaCardTitle {
@@ -90,16 +114,36 @@ body {
   color: white;
   font-family:   arial-bold, sans-serif;
   font-weight: bold;
+
 }
 .peopleAreaCardBody {
+  font-family: 'Roboto', sans-serif;
   background-color: rgb(56, 56, 56);
   color: white;
   padding: 1%;
+
 }
 .peopleAreaLI {
   background-color: rgb(56, 56, 56);
-  color:rgb(206, 13, 206);;
+  /* color:rgb(206, 13, 206); */
+  color: white;
   padding: 1%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.bioTextTarget {
+  color:rgb(206, 13, 206);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.emailTextTarget {
+  color:rgb(206, 13, 206);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 /* index.hbs drop-down menus start */
