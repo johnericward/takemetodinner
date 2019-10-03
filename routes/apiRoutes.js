@@ -14,7 +14,7 @@ module.exports = function(app) {
 
   // Create a new Eater
   app.post("/api/new", function(req, res) {
-    db.Eater.create(req.body).then(function(dbEater) {
+    db.Eater.create(req.body).then(function() {
       res.send({ err: 0, redirectUrl: "/"});
       //res.json(dbEater);
     });

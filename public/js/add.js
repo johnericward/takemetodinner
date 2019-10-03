@@ -29,9 +29,6 @@ $("#add-btn").on("click", function(event) {
       // log the data we found
       console.log(data);
       window.location = data.redirectUrl;
-      // tell the user we're adding a Profile with an alert window
-      //alert("Adding Profile...");
-      
     });
 
   // empty each input box by replacing the value with an empty string
@@ -41,7 +38,5 @@ $("#add-btn").on("click", function(event) {
   $("#restaurant2").val("");
   $("#restaurant3").val("");
   $("#emailContact").val("");
-  //console.log(this + "its working");
-
 
 });
